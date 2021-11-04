@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-void main()
+int main()
 {
     system("clear");
     printf("\n ~~ Quadratic Calculator ~~\n");
@@ -43,4 +43,5 @@ void main()
 
         printf("The zeros are: %f and %f.\n", zero_1_ptr, zero_2_ptr);
     };
+    return 0;
 };
