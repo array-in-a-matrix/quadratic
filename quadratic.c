@@ -5,6 +5,10 @@
 void main()
 {
     system("clear");
+    printf("\n ~~ Quadratic Calculator ~~\n");
+    printf("         ̲ ̲ ̲ ̲ ̲ ̲\n");
+    printf("    ̲-̲b̲±̲√̲b̲̲²̲̲-̲4̲a̲c̲\n");
+    printf("         2a\n\n");
 
     double num_A, num_B, num_C;
 
@@ -16,11 +20,11 @@ void main()
     scanf("%lf", &num_C);
 
     double radical = pow(num_B, 2) + (-4 * num_A * num_C);
-    printf("\n~~ radical %f\n\n", radical);
+    printf("\nUnder the radical: %f\n", radical);
     if (radical < 0.0)
     {
         // roots are complex
-        printf("roots are complex\n");
+        printf("Roots are complex.\n");
 
         double real_part = (-num_B) / (2 * num_A);
         double imaginary_part = sqrt(radical * -1.0) / (2 * num_A);
@@ -30,7 +34,7 @@ void main()
     else
     {
         // roots are real
-        printf("roots are real\n");
+        printf("Roots are real.\n");
 
         double numerator_1 = (-num_B) + sqrt(radical);
         double numerator_2 = (-num_B) - sqrt(radical);
