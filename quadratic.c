@@ -6,9 +6,9 @@ void main()
 {
     system("clear");
     printf("\n ~~ Quadratic Calculator ~~\n");
-    printf("         ̲ ̲ ̲ ̲ ̲ ̲\n");
-    printf("    ̲-̲b̲±̲√̲b̲̲²̲̲-̲4̲a̲c̲\n");
-    printf("         2a\n\n");
+    printf("             ̲ ̲ ̲ ̲ ̲ ̲\n");
+    printf("        ̲-̲b̲±̲√̲b̲̲²̲̲-̲4̲a̲c̲\n");
+    printf("             2a\n\n");
 
     double num_A, num_B, num_C;
 
