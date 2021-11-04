@@ -20,17 +20,23 @@ void main()
     if (radical < 0.0)
     {
         // roots are complex
-        // radical = radical * -1;
+        printf("roots are complex\n");
+
+        double real_part = (-num_B) / (2 * num_A);
+        double imaginary_part = sqrt(radical * -1.0) / (2 * num_A);
+
+        printf("The zeros are: %f+%fi and %f-%fi.\n", real_part, imaginary_part, real_part, imaginary_part);
     }
     else
     {
         // roots are real
+        printf("roots are real\n");
+
+        double numerator_1 = (-num_B) + sqrt(radical);
+        double numerator_2 = (-num_B) - sqrt(radical);
+        double zero_1_ptr = numerator_1 / (2 * num_A);
+        double zero_2_ptr = numerator_2 / (2 * num_A);
+
+        printf("The zeros are: %f and %f.\n", zero_1_ptr, zero_2_ptr);
     };
-
-    double numerator_1 = (-num_B) + sqrt(radical);
-    double numerator_2 = (-num_B) - sqrt(radical);
-    double zero_1_ptr = numerator_1 / (2 * num_A);
-    double zero_2_ptr = numerator_2 / (2 * num_A);
-
-    printf("The zeros are: %f and %f.\n", zero_1_ptr, zero_2_ptr);
 };
