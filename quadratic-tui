@@ -31,4 +31,4 @@ fi
 
 echo
 
-./quadratic $ARG_A $ARG_B $ARG_C
+quadratic $ARG_A $ARG_B $ARG_C
