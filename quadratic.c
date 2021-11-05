@@ -2,13 +2,19 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main()
+int main(int num_arg, char** args)
 {
     system("clear");
     printf("\n ~~ Quadratic Calculator ~~\n");
     printf("             ̲ ̲ ̲ ̲ ̲ ̲\n");
     printf("        ̲-̲b̲±̲√̲b̲̲²̲̲-̲4̲a̲c̲\n");
     printf("             2a\n\n");
+
+    printf("there are %d arguments\n", num_arg);
+    
+    for(int i=0; i < num_arg; ++i){
+        printf("%s\n", args[i]);
+    };
 
     double num_A, num_B, num_C;
 
