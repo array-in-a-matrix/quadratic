@@ -24,3 +24,5 @@ echo "c =" $ARG_C
 else
 echo "User canceled input."
 fi
+
+quadratic $ARG_A $ARG_B $ARG_C
