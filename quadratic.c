@@ -9,7 +9,7 @@ int main(int num_arg, char **args)
 
     if (num_arg <= 1)
     {
-        system("/bin/sh /home/linux/Documents/Projects/quadratic/quadratic-tui"); //! need a better solution
+        system("/bin/sh /home/linux/Documents/Projects/quadratic/quadratic-tui.sh"); //! need a better solution
     }
     else
     {
